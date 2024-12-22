@@ -9,3 +9,5 @@ const LineBrands = () => {
         </div>
     );
 };
+
+export default LineBrands;
