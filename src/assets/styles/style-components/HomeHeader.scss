@@ -1,0 +1,109 @@
+@use '../colors' as colors;
+@use '../../../App.scss' as App;
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 95px;
+
+    .header-nav__title {
+        font-family: App.$font-family-Volkhov, serif;
+        color: colors.$nav-homepage-color;
+        font-size: 52px;
+        font-weight: 400;
+    }
+
+    .header-nav__nav {
+        font-family: App.$font-family-Poppins, serif;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 58px;
+
+        .header-nav__nav-link {
+            color: colors.$nav-homepage-color;
+            transition: all 0.2s;
+
+            &:hover {
+                color: colors.$nav-hover;
+            }
+        }
+    }
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 50px;
+
+    grid-template-areas:
+        'left-aside top-pic right-aside'
+        'left-aside offer right-aside'
+        'left-aside bottom-pic right-aside';
+
+    .header-content__aside-content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: colors.$header-gray;
+        border-radius: 10px;
+
+        img {
+            height: 570px;
+        }
+    }
+
+    .left {
+        grid-area: left-aside;
+    }
+
+    .right {
+        grid-area: right-aside;
+    }
+
+    .header-content__top-pic {
+        text-align: center;
+        grid-area: top-pic;
+        background-color: colors.$header-gray;
+        border-radius: 10px;
+
+        img {
+            height: 145px;
+        }
+    }
+
+    .header-content__bottom-pic {
+        grid-area: bottom-pic;
+    }
+
+    .header-content__offer {
+        grid-area: offer;
+        font-family: App.$font-family-Poppins, serif;
+        text-align: center;
+        color: colors.$nav-homepage-color;
+
+        .header-content__slogan {
+            text-transform: uppercase;
+        }
+
+        .ultimate {
+            font-size: 91px;
+            color: inherit;
+        }
+
+        .sale {
+            font-size: 187px;
+            color: transparent;
+            -webkit-text-stroke: 2px colors.$nav-homepage-color;
+        }
+
+        .new-collection {
+            color: inherit;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use '../../../App.scss' as App;
+@use '/src/assets/styles/colors' as colors;
+
+.button {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+}
