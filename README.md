@@ -1,4 +1,4 @@
-# Readme
+# Fasco shop
 
 ### Project
 
@@ -6,22 +6,26 @@
 
 ### Stack
 
+---
+
+#### Client
+
   - `React` + `TS`
   - `Eslint` + `Prettier` + `Husky`
   - `Vite` + `Vitest`
-  - `GitHub pages`
+  - `SCSS` + `Styled-Components`
 
-### Folders
+#### Server
 
-Project includes this types of folders:
-  1. `public`
-  2. `src`
-  3. `assets`
-  4. `components`
-  5. `hooks`
-  6. `pages`
-  7. `utils`
+- `Node.js`
+- `Express`
+- `PostgreSQL`
+- `JWT`
 
 ### Deploy
 
 In this project I used `GitHub Pages` to deploy [deploy]()
+
+### Features
+
+### Screenshots
