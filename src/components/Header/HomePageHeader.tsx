@@ -1,6 +1,7 @@
 import Button from '../Buttons/Button/Button';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/style-components/HomeHeader.scss';
+import LineBrands from '../LineBrands';
 
 const Header = () => {
     return (
@@ -9,7 +10,9 @@ const Header = () => {
                 <h1 className="header-nav__title">Fasco</h1>
                 <nav className="header-nav__nav">
                     <a className="header-nav__nav-link">Home</a>
-                    <a className="header-nav__nav-link">Deals</a>
+                    <a className="header-nav__nav-link" href="#deals">
+                        Deals
+                    </a>
                     <a className="header-nav__nav-link">New Arrivals</a>
                     <a className="header-nav__nav-link">Packages</a>
                     <Link className="header-nav__nav-link" to="/signup">
@@ -55,6 +58,7 @@ const Header = () => {
                     />
                 </aside>
             </div>
+            <LineBrands />
         </header>
     );
 };

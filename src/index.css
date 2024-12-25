@@ -9,6 +9,7 @@
     border: 0;
     list-style-type: none;
     line-height: 1;
+    scroll-behavior: smooth;
 }
 
 button {
